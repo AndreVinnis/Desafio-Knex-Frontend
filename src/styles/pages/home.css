@@ -1,0 +1,9 @@
+.hero { padding: 88px 0 52px; display: grid; grid-template-columns: 1.2fr 1fr; column-gap: 30px; }
+.hero h1 { margin: 14px 0 0; font: 600 clamp(3.2rem, 7vw, 6.4rem) / .91 'Playfair Display', serif; letter-spacing: -.07em; grid-row: span 2; }
+.hero h1 em { color: var(--accent); }
+.hero p { color: var(--muted); align-self: end; max-width: 310px; line-height: 1.6; margin: 0 0 8px; font-size: 1.05rem; }
+
+.filters { display: grid; grid-template-columns: 2fr repeat(3, max-content); gap: 10px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 0; }
+.filters input { min-width: 0; width: 100%; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 10px 13px; outline-color: var(--accent); }
+.sort-button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 9px 12px; font-size: .82rem; }
+.results-head { padding: 20px 0 14px; color: var(--muted); font: 500 .73rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }

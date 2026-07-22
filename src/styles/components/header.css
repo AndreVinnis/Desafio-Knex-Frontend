@@ -1,0 +1,19 @@
+.site-header {
+    height: 76px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 max(5vw, 24px);
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    backdrop-filter: blur(10px);
+}
+
+.brand { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1.15rem; letter-spacing: -.04em; white-space: nowrap; }
+.brand span { color: var(--accent); margin-right: 4px; }
+.site-header p { color: var(--muted); margin: 0; font-size: .87rem; flex: 1; }
+.header-controls { display: flex; gap: 8px; }
+.header-controls select, .filters select { border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; background: var(--surface); color: var(--ink); font-size: .82rem; }
