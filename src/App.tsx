@@ -11,7 +11,8 @@ const stored = <T,>(key: string, fallback: T): T => (localStorage.getItem(key) a
 export default function App() {
   const [language, setLanguageState] = useState<AppLanguage>(() => stored('worldscope:language', 'en'))
   const [theme, setThemeState] = useState<Theme>(() => stored('worldscope:theme', 'system'))
-  const [path, setPath] = useState(location.pathname); const { countries, loading, error, reload } = useCountries()
+  const [path, setPath] = useState(location.pathname)
+  const { countries, loading, error, reload } = useCountries()
   const setLanguage = (value: AppLanguage) => { localStorage.setItem('worldscope:language', value); setLanguageState(value) }
   const setTheme = (value: Theme) => { localStorage.setItem('worldscope:theme', value); setThemeState(value) }
   
