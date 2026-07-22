@@ -1,0 +1,9 @@
+import type { AppLanguage } from '../types/country'
+
+const copy = {
+  en: { tagline: 'Explore the world, one country at a time.', search: 'Search for a country...', allRegions: 'All regions', sortName: 'Name', sortPopulation: 'Population', ascending: 'Ascending', descending: 'Descending', countries: 'countries', loading: 'Mapping the world...', retry: 'Try again', emptyTitle: 'No countries found', emptyBody: 'Try changing your search or filters.', back: 'Back to countries', capital: 'Capital', region: 'Region', subregion: 'Subregion', population: 'Population', area: 'Area', currencies: 'Currencies', languages: 'Languages', timezones: 'Time zones', borders: 'Border countries', noBorders: 'This country has no land borders.', theme: 'Theme', language: 'Language', system: 'System', light: 'Light', dark: 'Dark', officialName: 'Official name', noCapital: 'No capital listed', errorTitle: 'Something went wrong' },
+  pt: { tagline: 'Explore o mundo, um país por vez.', search: 'Busque por um país...', allRegions: 'Todas as regiões', sortName: 'Nome', sortPopulation: 'População', ascending: 'Crescente', descending: 'Decrescente', countries: 'países', loading: 'Mapeando o mundo...', retry: 'Tentar novamente', emptyTitle: 'Nenhum país encontrado', emptyBody: 'Tente alterar a busca ou os filtros.', back: 'Voltar aos países', capital: 'Capital', region: 'Região', subregion: 'Sub-região', population: 'População', area: 'Área', currencies: 'Moedas', languages: 'Idiomas', timezones: 'Fusos horários', borders: 'Países fronteiriços', noBorders: 'Este país não possui fronteiras terrestres.', theme: 'Tema', language: 'Idioma', system: 'Sistema', light: 'Claro', dark: 'Escuro', officialName: 'Nome oficial', noCapital: 'Sem capital informada', errorTitle: 'Algo deu errado' },
+} as const
+
+export type TranslationKey = keyof typeof copy.en
+export const t = (language: AppLanguage, key: TranslationKey) => copy[language][key]
