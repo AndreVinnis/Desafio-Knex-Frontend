@@ -1,0 +1,32 @@
+main { max-width: 1220px; padding: 0 max(5vw, 24px) 64px; margin: auto; }
+
+.eyebrow {
+    color: var(--accent);
+    letter-spacing: .13em;
+    font: 500 .69rem 'DM Mono', monospace;
+    text-transform: uppercase;
+}
+
+.empty, .state { text-align: center; padding: 100px 20px; color: var(--muted); }
+
+.empty h2, .state h1 { color: var(--ink); }
+
+.state button, .back {
+    background: var(--accent);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 14px;
+}
+
+.orb {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse { to { transform: scale(.65); opacity: .35; } }

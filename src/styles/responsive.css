@@ -1,0 +1,26 @@
+@media (max-width: 780px) {
+    .site-header { gap: 12px; height: auto; min-height: 68px; flex-wrap: wrap; padding-block: 12px; }
+    .site-header p { display: none; }
+    .header-controls { margin-left: auto; }
+    .hero { grid-template-columns: 1fr; padding: 56px 0 36px; }
+    .hero h1 { grid-row: auto; }
+    .hero p { margin-top: 22px; }
+    .filters { grid-template-columns: 1fr 1fr; }
+    .filters input { grid-column: 1 / -1; }
+    .country-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .country-card { padding: 14px; min-height: 190px; }
+    .facts { grid-template-columns: repeat(2, 1fr); }
+    .facts article:nth-child(-n+4) { border-top: 0; }
+    .facts article:nth-child(-n+2) { border-top: 1px solid var(--line); }
+    .detail-hero { align-items: flex-start; gap: 18px; }
+    .detail-flag { font-size: 3.8rem; }
+}
+
+@media (max-width: 410px) {
+    .filters { grid-template-columns: 1fr; }
+    .filters input { grid-column: auto; }
+    .country-grid { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: 1fr; }
+    .facts article:nth-child(-n+2) { border-top: 0; }
+    .facts article:first-child { border-top: 1px solid var(--line); }
+}
